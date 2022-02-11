@@ -1,1 +1,185 @@
+/* Math2²Everyone Website CSS */
+/*------------------------------*/
+
+
+/* -------Background and general conditions----------*/
+html, body{
+  font-family: "Fira Code";
+  font-weight: bold;
+	font-size:13px;
+	color: #091F92;
+	background-color: #fff; 
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+/*-----------------------------*/
+
+/* -------Colours----------*/
+
+.blue {
+  color: #091F92;
+}
+.darkblue {
+  color: #2A2E46;
+}
+/*-----------------------------*/
+
+
+/* -------Navigation Bar----------*/
+#navbar {
+  height: 30px;
+  overflow: hidden;
+  background-color: #fff;
+  position: fixed;
+  padding: 40px 30px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+
+a {
+  margin-top: -8px;
+  margin-right: 50px;
+  color: #091F92;
+  float: right;
+  display: inline-block;
+  text-align: center;
+  padding: 8px 0px;
+  text-decoration: none;
+  position: relative;
+}
+
+@media (max-width: 767px) { 
+  a{
+    display:none;
+  }
+}
+
+a:hover {
+  color: #848FC9;
+}
+
+.logo {
+  margin-left: 37px;
+  margin-top: -23px;
+  height: 75px;
+  float: left;
+  display: block;
+  text-decoration: none;
+  transition: 0.4s;
+  text-align: center;
+  padding: 11px 16px;
+}
+
+/*effect-underline*/
+a.effect-underline:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 3px solid #091F92;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+a.effect-underline:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+#navbar ol {
+  position: relative;
+  display: inline;
+}
+
+#navbar-right {
+  float: right;
+}
+
+
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 20px !important;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*-----------------------------*/
+
+
+
+
+
+/* -------Home Section----------*/
+.section {
+	background: #fff;
+  padding-top: 100px;
+	padding-bottom: 3rem;
+  min-height: 100vh;
+  overflow-y: hidden;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  height: 50%;
+}
+#home .container{
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  color: #091F92;
+  font-weight: 900;
+  font-size: 600%;
+  line-height: 100%;
+  margin: 5%;
+  margin-top: 5%;
+}
+#home .text {
+  color: #091F92;
+  margin-top: -50px;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+#home .contact {
+  font-weight: 900;
+  font-size: 12px;
+}
+
+#home img {
+  margin-top: 50px;
+  margin-left: 16%;
+  height: 260px;
+  margin-right: 20px;
+}
+/*-----------------------------*/
+
+
+
+
+
+
+
+
+
+
 
